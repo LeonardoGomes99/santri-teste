@@ -1,29 +1,33 @@
-# README #
+# PROJETO LARAVEL SANTRI #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Esse Projeto foi montando em cima de um ambiente docker
 
-### What is this repository for? ###
+### Quais são os requisitos? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+#Baixar as Seguintes ferramentas:#
+* Docker
+* Docker Compose
 
-### How do I get set up? ###
+### Depois de baixar o que fazer ? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* rodar o comando ~ docker-compose up --d
+* após isso, entrar no container do php-apache_container (para encontrar o nome do container/id rode o comando ~ docker ps    ou  ~ docker-compose ps)
+* rodar o ~ composer install
+* rodar o ~ cp .env.example .env
+* sair do container e rodar o comando ~ docker-compose run artisan key:generate
+* rodar o comando ~ docker-compose run artisan config:clear
+* rodar o comando ~ docker-compose run artisan cache:clear
+* e isso já basta para rodar a aplicação
+* caso tenha algum problema de permissão entre no container e rode chmod nas pastas storage e boostrap/cache
 
-### Contribution guidelines ###
+### PORTAS, USUARIOS E SENHAS ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* A Aplicação está rodando no apache onde está setado a porta 8000
+* o banco de dados foi setado para a porta padrão 3306 ( caso tenha algum problema com o container do mysql, pode ter a possiblidade de conflito a porta do mysql da sua máquina e o container do mysql)
+* o usuário do mysql é: root
+* e não possuí senha, então basta deixa-lá vazia
+* o nome do banco de dados é: teste
 
-### Who do I talk to? ###
+### "TENHO UMA DÚVIDA SOBRE COMO RODAR O PROJETO" ###
 
-* Repo owner or admin
-* Other community or team contact
+Caso tenha alguma dúvida por favor encaminhar uma mensagem pelo WhatsApp ou pelos comentários do repositório.
