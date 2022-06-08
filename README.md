@@ -30,4 +30,4 @@ Esse Projeto foi montando em cima de um ambiente docker
 
 ### "TENHO UMA DÚVIDA SOBRE COMO RODAR O PROJETO" ###
 
-Caso tenha alguma dúvida por favor encaminhar uma mensagem pelo WhatsApp ou pelos comentários do repositório.
+Caso tenha alguma dúvida por favor encaminhar uma mensagem pelo WhatsApp ou deixar comentários neste repositório.
